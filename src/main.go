@@ -28,4 +28,14 @@ func main() {
 	slice = append(slice, newSlice...)
 	fmt.Println(slice)
 
+	// recorrer un array o un slice
+
+	slice2 := []string{"Vamos", "a ver", "que pasa"}
+
+	for i, valor := range slice2 {
+		fmt.Println(i, valor)
+	}
+
+	//
+
 }
