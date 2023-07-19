@@ -2,19 +2,13 @@ package main
 
 import "fmt"
 
+type Car struct {
+	year  int
+	brand string
+}
+
 func main() {
-	m := make(map[string]int)
-	m["Jose"] = 14
-	m["Pepito"] = 20
-
-	fmt.Println(m)
-
-	//recorrer un map
-
-	for i, v := range m {
-		fmt.Println(i, v)
-
-	}
-	// los maps realizar concurrencia.
+	myCar := Car{year: 1987, brand: "Ford"}
+	fmt.Println(myCar)
 
 }
