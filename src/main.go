@@ -1,25 +1,20 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
-
-func isPalindrome(text string) {
-	text2 := strings.ToLower(text)
-	textReverse := ""
-	for i := len(text2) - 1; i >= 0; i-- {
-		textReverse += string(text2[i])
-	}
-	if text2 == textReverse {
-		fmt.Println("is Palindrome")
-	} else {
-		fmt.Println("no es")
-	}
-
-}
+import "fmt"
 
 func main() {
-	isPalindrome("Ama")
+	m := make(map[string]int)
+	m["Jose"] = 14
+	m["Pepito"] = 20
+
+	fmt.Println(m)
+
+	//recorrer un map
+
+	for i, v := range m {
+		fmt.Println(i, v)
+
+	}
+	// los maps realizar concurrencia.
 
 }
