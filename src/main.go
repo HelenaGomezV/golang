@@ -3,23 +3,31 @@ package main
 import "fmt"
 
 func main() {
+	//defer
+	defer fmt.Println("Hola")
+	fmt.Println("Mundo")
 
-	switch modulo := 5 % 2; modulo {
-	case 0:
-		fmt.Println("es par")
-	default:
-		fmt.Println("impar")
+	//buena practica para cerrar conecciones, son buenas practicas utilizar un solo difer por funcion
+
+	// CONTINUE AND BREAK
+
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+		// continue
+		if i == 2 {
+			fmt.Println("Es 2")
+			continue
+		}
+
 	}
 
-	value := 200
-
-	switch {
-	case value > 100:
-		fmt.Println("Es mayor 100")
-	case value < 0:
-		fmt.Println("Es menor que cero")
-	default:
-		fmt.Print("No condion")
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+		// continue
+		if i == 8 {
+			fmt.Println("Es 8")
+			break
+		}
 
 	}
 
