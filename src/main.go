@@ -1,14 +1,18 @@
 package main
 
-import "fmt"
-
-type Car struct {
-	year  int
-	brand string
-}
+import (
+	"cursoPlatzi/src/mypackages"
+	"fmt"
+)
 
 func main() {
-	myCar := Car{year: 1987, brand: "Ford"}
+	var myCar mypackages.Car
+	myCar.Brand = "Ferrari"
+	myCar.Year = 2020
 	fmt.Println(myCar)
 
+	// var myOtherCar mypackages.carPrivate
+	// fmt.Println(myCar)
+
+	mypackages.PrintMessage()
 }
